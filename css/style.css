@@ -1,5 +1,6 @@
 body {
-	background: #2e2e2e;
+	background:url('../img/bg.jpg') no-repeat center #2e2e2e;
+	background-size: cover;
 	font-family: 'Abel', sans-serif;
 }
 
