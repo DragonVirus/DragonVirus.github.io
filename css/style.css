@@ -2,17 +2,24 @@ body {
 	background:url('../img/bg.jpg') no-repeat center #2e2e2e;
 	background-size: cover;
 	font-family: 'Abel', sans-serif;
+	margin: 0px;
 }
 
 a {
 	color: #fff;
 }
 
+#myinfo {
+	clear:both;
+}
+
 #main_wrapper {
 	color: #fff;
 	width: 70%;
-	margin: 20px auto;
+	margin: 55px auto 20px auto;
 	text-align: center;
+	height: 100%;
+	min-height: 500px;
 }
 
 .handwritten_font {
@@ -40,8 +47,93 @@ a {
 
 #social_links {
 	font-size: 30px;
+	position: fixed;
+	width: 70%;
+	bottom: 20px;
+	clear: both;
 }
 
 #social_links a {
 	padding:10px;
+}
+
+header {
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+#navigation {
+	overflow: hidden;
+	margin: 0px;
+
+}
+
+ul#navigation li {
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	border-bottom:3px solid rgba(0, 0, 0, 0.5);	
+}
+
+li#nav_home:hover {
+	border-color: #F44336;
+}
+
+li#nav_design:hover {
+	border-color: #2196F3;
+}
+
+li#nav_code:hover {
+	border-color: #009688;
+}
+
+li#nav_photo:hover {
+	border-color: #FFEB3B;
+}
+
+li#nav_travel:hover {
+	border-color: #FF9800;
+}
+
+ul#navigation li a {
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	text-decoration: underline;
+}
+
+#design_wrapper {
+	text-align: center;
+}
+
+.project_wrapper {
+	display: inline-block;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 10px;
+}
+
+#tardis {
+	width: 300px;
+	height: 375px;
+	position: absolute;
+	bottom: 0;
+	left: -41px;
+}
+
+#tardis img {
+	display:none;
+}
+
+
+#whovian_info {
+	font-size: 20px;
+	position: absolute;
+	top: 210px;
+	right: 69px;
+	transform: rotate(-20deg);
 }

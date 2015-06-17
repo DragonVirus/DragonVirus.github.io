@@ -9,13 +9,29 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+	<!--
+	<header>
+		<ul id="navigation">
+			<li id="nav_home"><a href="index.html"><i class="fa fa-home"></i></a></li>
+			<li id="nav_design"><a href="design.html"><i class="fa fa-paint-brush"></i></a></li>
+			<li id="nav_code"><a href=""><i class="fa fa-code"></i></a></li>
+			<li id="nav_photo"><a href=""><i class="fa fa-camera"></i></a></li>
+			<li id="nav_travel"><a href=""><i class="fa fa-plane"></i></a></li>
+		</ul>
+	</header>
+	!-->
 	<div id="main_wrapper">
 		<div id="myinfo" class="handwritten_font">
 			<p>Hello !!!</p>
 			<p>My name is Li Jia Li. I'm a PHP web developer reside in Yangon, Myanmar.</p>
 			<p>I'm also a design & arts enthusiast. Love photography as a hobby.</p>
+			<p>I do a little bit of everything. Jack of all trades and master of some.</p>
 			<p>I watch sci-fi movies a lot and listen to music almost all the times.</p>
-			<p>I'm a developer at <a href="http://www.hexcores.com" target="_blank">Hexcores</a> - Web & Mobile Studio & core modules developer of <a href="http://www.reborncms.com" target="_blank">RebornCMS.</a></p>
+			<p>Co-Founder of <a href="http://www.hexcores.com" target="_blank">Hexcores</a>, a tech startup reside in #AwesomeYangon. :)</p>
+		</div>
+		<div id="tardis">
+			<img src="img/tardis.png" alt="tardis">
+			<p class="handwritten_font" id="whovian_info">Also a #whovian.</p>
 		</div>
 		<div id="mylogo"></div>
 		<div id="social_links">
@@ -28,5 +44,26 @@
 			<a href="http://open.spotify.com/user/dragonvirus" target="_blank"><i class="fa fa-spotify"></i></a>
 		</div>
 	</div>
+	<audio preload="auto" id="tardis_voice">
+		<source src="audio/tardis.mp3" type="audio/mpeg"></source>
+		<source src="audio/tardis.ogg" type="audio/ogg"></source>
+		Your browser does not support the audio tag.
+	</audio>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var audio = $("#tardis_voice")[0];
+			$('#tardis').mouseenter(function(){
+				audio.currentTime = 0;
+				audio.play();
+				$('#tardis img').fadeIn(12000);
+			});
+			$('#tardis').mouseout(function(){
+				audio.currentTime = 0;
+				audio.play();
+				$('#tardis img').fadeOut(12000);
+			});
+		});
+	</script>
 </body>
 </html>
