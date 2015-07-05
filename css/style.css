@@ -137,3 +137,11 @@ ul#navigation li a {
 	right: 69px;
 	transform: rotate(-20deg);
 }
+
+#fiveHundredpxlogo {
+	width: 50px;
+	height: 23px;
+	display: inline-block;
+	background: url('../img/500pxlogo@2x.png') no-repeat;
+	background-size: contain;
+}
